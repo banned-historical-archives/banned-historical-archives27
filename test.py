@@ -112,7 +112,7 @@ def fetch_search_results_with_proxy(keyword):
             for i in links:
                 link = i['href']
 
-                fetch_detail(base_url + link)
+                fetch_detail(base_url + link, keyword)
 
             #time.sleep(2)  # 礼貌性延迟，避免给服务器造成过大压力
 
@@ -136,16 +136,24 @@ def safe_write(f, c):
     temp_file_path = temp_f.name
     os.replace(temp_file_path, f)
 
-def fetch_detail(link):
+def fetch_detail(link, key = None):
     fname = hashlib.md5(link.encode('utf-8')).hexdigest()
     directory = os.path.join(os.getcwd(), 'html', fname[:4])
     output = os.path.join(directory, fname + '.html')
+    content = ''
     if os.path.exists(output):
         print('ignore', link)
         return
-
-    print('fetch', link, fname)
-    content = safe_get(link, {})
+        with open(output, 'r', encoding='utf-8') as file:
+            content = file.read()
+    else:
+        print('fetch', link, fname)
+        content = safe_get(link, {})
+    if key:
+        if content.lower().find(key) == -1:
+            if os.path.exists(output):
+                os.unlink(output)
+            return
     if not os.path.exists(directory):
         os.makedirs(directory)
     
