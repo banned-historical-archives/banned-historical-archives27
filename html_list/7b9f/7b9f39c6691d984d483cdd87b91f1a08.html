@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="https://www.cia.gov/readingroom/sites/all/themes/foia_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta http-equiv="onion-location" content="http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion" /><title>Advanced Search | CIA FOIA (foia.cia.gov)</title>
+  <style type="text/css" media="all">
+@import url("https://www.cia.gov/readingroom/modules/system/system.base.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/modules/system/system.menus.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/modules/system/system.messages.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/modules/system/system.theme.css?sl3fos");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.cia.gov/readingroom/sites/all/modules/contrib/advanced_search_block/advanced_search_block.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/modules/field/theme/field.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/modules/node/node.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/modules/search/search.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/modules/user/user.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/modules/contrib/views/css/views.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/modules/contrib/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?sl3fos");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.cia.gov/readingroom/sites/all/modules/contrib/request_status/css/reqsta.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/modules/contrib/ctools/css/ctools.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/modules/contrib/wysiwyg_linebreaks/wysiwyg_linebreaks.css?sl3fos");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.css" media="all" />
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+.html .qtip{max-width:none;}.html .qtip-content{height:100%;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://www.cia.gov/readingroom/sites/all/modules/contrib/text_resize/text_resize.css?sl3fos");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/foia_wrapper/bootstrap.min.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/foia_wrapper/bootstrap-grid-4.5.0.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/foia_wrapper/wrapper.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/foia_wrapper/wrapper-footer.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/foia_wrapper/hamburger.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/new_css_b.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/new_custom.css?sl3fos");
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/foia_err.css?sl3fos");
+</style>
+<style type="text/css" media="print">
+@import url("https://www.cia.gov/readingroom/sites/all/themes/foia_theme/css/print.css?sl3fos");
+</style>
+  <script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/misc/jquery-extend-3.4.0.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/misc/drupal.js?sl3fos"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/apachesolr_sort/apachesolr_sort.js?sl3fos"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/custom_search/js/custom_search.js?sl3fos"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/ctools/js/dependent.js?sl3fos"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/views_field_tooltip/js/views_field_tooltip.js?sl3fos"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var text_resize_scope = "main";
+          var text_resize_minimum = "12";
+          var text_resize_maximum = "25";
+          var text_resize_line_height_allow = 1;
+          var text_resize_line_height_min = "16";
+          var text_resize_line_height_max = "36";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/text_resize/text_resize.js?sl3fos"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/readingroom/sites/all/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/modules/contrib/facetapi/facetapi.js?sl3fos"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/themes/foia_theme/js/jquery-3.4.1.min.js?sl3fos"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/themes/foia_theme/js/bootstrap-4.0.0.min.js?sl3fos"></script>
+<script type="text/javascript" src="https://www.cia.gov/readingroom/sites/all/themes/foia_theme/js/wrapper.js?sl3fos"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/readingroom\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"foia_theme","theme_token":"yFl6xy9ZI9QQSHaEu3Aq8PyROlJ9piXjI3PUFXE3Zg4","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/apachesolr_sort\/apachesolr_sort.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/dependent.js":1,"\/\/cdn.jsdelivr.net\/qtip2\/2.2.0\/jquery.qtip.min.js":1,"sites\/all\/modules\/contrib\/views_field_tooltip\/js\/views_field_tooltip.js":1,"0":1,"sites\/all\/modules\/contrib\/text_resize\/text_resize.js":1,"1":1,"sites\/all\/modules\/contrib\/facetapi\/facetapi.js":1,"sites\/all\/themes\/foia_theme\/js\/jquery-3.4.1.min.js":1,"sites\/all\/themes\/foia_theme\/js\/bootstrap-4.0.0.min.js":1,"sites\/all\/themes\/foia_theme\/js\/wrapper.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/advanced_search_block\/advanced_search_block.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/contrib\/request_status\/css\/reqsta.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/wysiwyg_linebreaks\/wysiwyg_linebreaks.css":1,"\/\/cdn.jsdelivr.net\/qtip2\/2.2.0\/jquery.qtip.min.css":1,"0":1,"sites\/all\/modules\/contrib\/text_resize\/text_resize.css":1,"sites\/all\/themes\/foia_theme\/css\/foia_wrapper\/bootstrap.min.css":1,"sites\/all\/themes\/foia_theme\/css\/foia_wrapper\/bootstrap-grid-4.5.0.css":1,"sites\/all\/themes\/foia_theme\/css\/foia_wrapper\/wrapper.css":1,"sites\/all\/themes\/foia_theme\/css\/foia_wrapper\/wrapper-footer.css":1,"sites\/all\/themes\/foia_theme\/css\/foia_wrapper\/hamburger.css":1,"sites\/all\/themes\/foia_theme\/css\/new_css_b.css":1,"sites\/all\/themes\/foia_theme\/css\/new_custom.css":1,"sites\/all\/themes\/foia_theme\/css\/foia_err.css":1,"sites\/all\/themes\/foia_theme\/css\/print.css":1}},"custom_search":{"form_target":"_self","solr":1},"profile":"foia","profile_version":"7.x","CTools":{"dependent":{"edit-ds-field-pub-date-value":{"values":{"edit-ds-field-pub-date-op":["\u003C","\u003C=","=","!=","\u003E=","\u003E","regular_expression","not_regular_expression"]},"num":1,"type":"hide"},"edit-ds-field-pub-date-min":{"values":{"edit-ds-field-pub-date-op":["between","not between"]},"num":1,"type":"hide"},"edit-ds-field-pub-date-max":{"values":{"edit-ds-field-pub-date-op":["between","not between"]},"num":1,"type":"hide"}}},"urlIsAjaxTrusted":{"\/readingroom\/advanced-search-view":true},"viewsFieldTooltip":{"advanced_search_view":{"advanced_search_view":{"labels":[],"fields":{"label":[{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP84B00049R000701880012-0 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP84B00049R000701880012-0 RIFPUB C 13 December 20, 2016 October 20, 2006 12 October 28, 1982 CABLE Attachment Size CIA-RDP84B00049R000701880012-0.pdf 938.07 KB Approved For R*ii s f llM-Elk~ l4F,?0049R000701880012-0 NONE IN=0: M ASS EC,- H. CC=N-N. COPS-S. CEA NA?J-2."}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP80B01676R003800180035-6 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP80B01676R003800180035-6 RIFPUB C 14 December 12, 2016 January 31, 2002 35 June 12, 1958 LETTER Attachment Size CIA-RDP80B01676R003800180035-6.pdf 1.03 MB Executive Registry Approved For Release 2002\/02\/13: CIA-RDP80B01676R003800180035- June 12, 1958 Mr. John Rich,"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP69B00369R000200290067-0 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP69B00369R000200290067-0 RIFPUB K 4 December 12, 2016 October 7, 2001 67 October 17, 1967 OPEN Attachment Size CIA-RDP69B00369R000200290067-0.pdf 814.5 KB Approved For Release 2001\/11\/01: CIA-RDP69B00369R000200290067-0 CONGRESSIONAL. RECORD- HOUSE H 13571 issued mILA"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP75-00001R000300280044-7 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP75-00001R000300280044-7 RIPPUB K 6 November 11, 2016 February 8, 1999 44 September 15, 1961 MAGAZINE Attachment Size CIA-RDP75-00001R000300280044-7.pdf 821.67 KB VITAL Sk\u0026#039;.. G~,,........-....___. I Ized fjp @VW For Release: CIA-RDP75-00 ikb6b3UU rag ROGER"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP78B04558A001600010011-2 \u003Cbr \/\u003E\r\n CREST NGA Records (Formerly NIMA) CIA-RDP78B04558A001600010011-2 RIPPUB T 33 December 28, 2016 March 31, 2008 11 September 29, 1966 CABLE Attachment Size CIA-RDP78B04558A001600010011-2.pdf 2.5 MB Approved For Release 2008\/03\/31: CIA-RDP78BO4558AO01600010011-2 Declassification Review by NGA\/DoD P"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP79-00927A002900010001-1 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP79-00927A002900010001-1 RIPPUB S 62 December 21, 2016 October 17, 2008 1 September 1, 1960 SUMMARY Attachment Size CIA-RDP79-00927A002900010001-1.pdf 5.81 MB Approved For Release 2008\/10\/17: CIA-RDP79-00927AO0290001 0001-1 CONFIDENTIAL CURRENT INTELLIGENCE WEEKLY"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP80-00810A006800060010-3 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP80-00810A006800060010-3 RIPPUB S 32 December 21, 2016 September 26, 2008 10 June 17, 1955 REPORT Attachment Size CIA-RDP80-00810A006800060010-3.pdf 1.24 MB Approved For Release 2008\/09\/26: CIA-RDP80-0081 OA006800060010-3 25X1 CLASSIFICATION CENTRAL I REPORT CD NO."}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP75-00149R000200900053-6 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP75-00149R000200900053-6 RIPPUB K 14 November 11, 2016 March 17, 1999 53 May 13, 1966 MAGAZINE Attachment Size CIA-RDP75-00149R000200900053-6.pdf 2.3 MB ~,~ F E STATINTL Sanitized-Approved For Release:CIA-RDP75-00149 \u0026#039;- MAY 13 1966 In the center of the arguments"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP71B00364R000100170049-6 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP71B00364R000100170049-6 RIFPUB K 7 December 14, 2016 February 4, 2003 49 January 28, 1969 NSPR Attachment Size CIA-RDP71B00364R000100170049-6.pdf 952.73 KB EVENINCpraWala For Release 2003\/02\/27PWRgattrad4R900100170049-?AGE?44.44,?AIL V42444\u0026quot;4 Ce-1.1\u0026quot;1441"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP79T00912A001800010013-6 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP79T00912A001800010013-6 RIPPUB S 31 December 22, 2016 February 18, 2009 13 June 8, 1977 NOTES Attachment Size CIA-RDP79T00912A001800010013-6.pdf 1.45 MB Sanitized Copy Approved for Release 2009\/12\/01: CIA-RDP79T00912AO01800010013-6 International Narcotics DOJ, DOS"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP80-00809A000600210265-5 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP80-00809A000600210265-5 RIPPUB C 18 December 22, 2016 June 23, 2011 265 March 8, 1949 REPORT Attachment Size CIA-RDP80-00809A000600210265-5.pdf 1.36 MB Sanitized Copy Approved for Release 2011\/06\/24:CIA-RDP80-00809A000600210265-5 50X1-HUM CLASS~iCATION rt-t~`3~3\u0026amp;"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP79-01209A000900060001-4 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP79-01209A000900060001-4 RIPPUB S 58 December 22, 2016 June 21, 2012 1 January 4, 1978 PERRPT Attachment Size CIA-RDP79-01209A000900060001-4.pdf 1.17 MB Declassified in Part- Sanitized Copy Approved for Release 2012\/06\/21: CIA-RDP79-01209A000900060001-4 Weekly"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP79R01012A002500050001-0 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP79R01012A002500050001-0 RIFPUB S 14 December 22, 2016 September 20, 2012 1 June 11, 1953 NIE Attachment Size CIA-RDP79R01012A002500050001-0.pdf 1.1 MB ICt?? Declassified and Approved For Release 2012\/09\/20: CIA-RDP79R01012A002500050001-0 MAMMY 1.W! k.,vr I ply"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP84-00893R000100160001-3 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP84-00893R000100160001-3 RIPPUB S 23 December 22, 2016 April 5, 2010 1 May 12, 1983 REPORT Attachment Size CIA-RDP84-00893R000100160001-3.pdf 1011.32 KB Sanitized Copy Approved for Release 2011\/05\/31: CIA-RDP84-00893R000100160001-3 NASTER FIEF COPY I Terrorism Review"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP86T01017R000707020001-4 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP86T01017R000707020001-4 RIPPUB C 16 December 22, 2016 March 21, 2011 1 January 10, 1986 MEMO Attachment Size CIA-RDP86T01017R000707020001-4.pdf 831.39 KB Declassified in Part- Sanitized Copy Approved for Release 2011\/12\/01: CIA-RDP86T01017R000707020001-4 25X1 I I"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP90-00965R000504520002-7 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP90-00965R000504520002-7 RIFPUB K 8 December 22, 2016 January 12, 2012 2 April 14, 1986 OPEN SOURCE Attachment Size CIA-RDP90-00965R000504520002-7.pdf 916.83 KB Declassified and Approved For Release 2012\/01\/12: CIA-RDP90-00965R000504520002-7- ww%-- W\/ H1NGT0N TIMES"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP90-00806R000100210066-5 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP90-00806R000100210066-5 RIPPUB K 174 December 22, 2016 September 2, 2010 66 June 30, 1985 MISC Attachment Size CIA-RDP90-00806R000100210066-5.pdf 11.19 MB Sanitized Copy Approved for Release 2010\/09\/02: CIA-RDP90-00806R000100210066-5 Com ments o John Temple Swing"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP67-00318R000100210001-4 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP67-00318R000100210001-4 RIFPUB K 23 December 23, 2016 May 7, 2013 1 January 1, 1963 LETTER Attachment Size CIA-RDP67-00318R000100210001-4.pdf 1.03 MB Declassified and Approved For Release 2013\/05\/07: CIA-RDP67-00318R000100210001-4 THE CENTRAL INTELLIGENCE AGENCY"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP81-01030R000100410001-4 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP81-01030R000100410001-4 RIPPUB C 15 December 23, 2016 September 9, 2013 1 April 26, 1954 REPORT Attachment Size CIA-RDP81-01030R000100410001-4.pdf 751.2 KB Declassified in Part- Sanitized Copy Approved for Release 2013\/09\/09: CIA-RDP81-01030R000100410001-4 CENTRAL"}},{"theme":"\u003Cimg class=\u0022views-field-tooltip-icon\u0022 typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.cia.gov\/readingroom\/sites\/all\/modules\/contrib\/views_field_tooltip\/images\/help.png\u0022 alt=\u0022\u0022 \/\u003E","qtip":{"content":"Document Number\/ESDN: CIA-RDP85T00875R000300040019-1 \u003Cbr \/\u003E\r\n CREST General CIA Records CIA-RDP85T00875R000300040019-1 RIPPUB C 34 November 9, 2016 April 7, 1999 19 May 5, 1971 REPORT Attachment Size CIA-RDP85T00875R000300040019-1.pdf 1.74 MB r- ppr(?V, For R lease T\u0026#039;19949\/2i `.G1440 f l;3 Tl rs dr 3 Qpr U 1 Approved For Release 1999\/09\/25: CIA"}}]},"style":"views_plugin_style_table","style_type":"table"}}},"facetapi":{"facets":[{"limit":"5","id":"facetapi-facet-apachesolrsolr-block-im-field-collection","searcher":"apachesolr@solr","realmName":"block","facetName":"im_field_collection","queryType":null,"widget":"facetapi_links","showMoreText":"Show more ","showFewerText":"Show fewer "},{"limit":"5","id":"facetapi-facet-apachesolrsolr-block-dm-field-release-date","searcher":"apachesolr@solr","realmName":"block","facetName":"dm_field_release_date","queryType":"date","widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":"10","id":"facetapi-facet-apachesolrsolr-block-created","searcher":"apachesolr@solr","realmName":"block","facetName":"created","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"}]}});
+//--><!]]>
+</script>
+  
+  <!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in two-sidebars page-advanced-search-view section-library" >
+    <div id="wrapper">
+  <noscript>Javascript must be enabled for the correct page display</noscript>
+  <header id="header">
+    <div class="header-holder">
+
+      <div class="container-flex">
+        <div class="row main-navbar-wrapper my-auto">
+            <div class="col-12">
+                <div class="row main-navbar-wrapper-top">
+                    <div class="col-12 goto-wrapper my-auto text-center">
+                        <div class="goto my-auto main-navbar-utlity-link align-middle" onclick="location.href = 'https://www.cia.gov'">Go to CIA.gov</div>
+                    </div>
+                </div>
+                <div class="row flex-nowrap main-navbar-wrapper-bottom">
+                    <div class="col-3 my-auto float-left">
+                        <span class="navbar-underline nav-title" onclick="GoTo('readingroom/')"> <img src="/readingroom/sites/all/themes/foia_theme/images/bt/Glyph-FOIA.svg" class="nav-main-seal" />FOIA</span>
+                    </div>
+                    <div class="col-9 main-navbar-sub-wrapper my-auto">
+                        <div class="main-navbar my-auto">
+                            <ul class="main-navbar-menu">
+                                <li>
+                                    <a class="nav-link" href="/readingroom/foia_request">Submit Request</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/readingroom/fees-and-waivers-foia">Fee Schedule</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/readingroom/frequently-asked-questions">FAQs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/readingroom/search/site">Reading Room</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/readingroom/what-electronic-reading-room">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="my-auto navbar-vertical-line">
+                            <div class="main-navbar text-center my-auto">
+                                <center>
+                                   <a class="nav-link" href="/readingroom/advanced-search-view">Search <img class='icon-ti-search' src='/readingroom/sites/all/themes/foia_theme/images/bt/ic_search.svg' /> </a>
+                                </center>
+                            </div>
+                            <div class="main-navbar-menu-icons">
+                                <img class='icon-ti-search hover-underline' onclick="GoTo('readingroom/advanced-search-view')" src='/readingroom/sites/all/themes/foia_theme/images/bt/ic_search.svg' />
+                                <button id="MainMenuOpen" class="hamburger hamburger--emphatic main-menu-icon" type="button" aria-label="Menu" aria-controls="navigation"> <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>
+                                <img id="MainMenuClose" src="/readingroom/sites/all/themes/foia_theme/images/bt/Menu-Close-NoBorder.svg" style="display:none" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MenuOverlay" class="row nav-menu-overlay">
+                    <div class="col-12 my-auto" style="height:100%">
+
+                        <div class="menu-overlay-content-wrapper text-left">
+
+                            <div class="main-menu-list-wrapper">
+                                <ul class="main-menu-list">
+                                    <li class="main-menu-list-item foia-request top" onclick="GoTo('readingroom/foia_request')">
+                                        <span class="main-menu-list-item-text">Submit Request</span>
+                                    </li>
+                                    <li class="main-menu-list-item fee-schedule top" onclick="GoTo('readingroom/fees-and-waivers-foia')">
+                                        <span class="main-menu-list-item-text">Fee Schedule</span>
+                                    </li>
+                                    <li class="main-menu-list-item faqs top" onclick="GoTo('readingroom/frequently-asked-questions')">
+                                        <span class="main-menu-list-item-text">FAQs</span>
+                                    </li>
+                                    <li class="main-menu-list-item reading-room top" onclick="GoTo('readingroom/search/site')">
+                                        <span class="main-menu-list-item-text">Reading Room</span>
+                                    </li>
+                                    <li class="main-menu-list-item about top" onclick="GoTo('readingroom/what-electronic-reading-room')">
+                                        <span class="main-menu-list-item-text">About</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="row body-line-divider">
+                                <div class="col-lg-12"></div>
+                            </div>
+
+                            <div class="main-menu-list-wrapper">
+                                <ul class="main-menu-list">
+                                    <li class="main-menu-list-item nav-search" onclick="GoTo('readingroom/advanced-search-view')">
+                                        <span class="main-menu-list-item-text bottom">Search</span>
+                                        <span class="main-menu-list-item-icon my-auto"> <img class='icon-ti-search' src='/readingroom/sites/all/themes/foia_theme/images/bt/ic_search.svg' /> </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+  <div class="main-block">
+    <section id="main">
+<!--      <div class="heading-panel">
+        <h1>Library</h1>
+      </div>  -->
+      <div class="main-holder">
+        <div id="sidebar">
+          <nav class="sidebar-nav">
+            <h2 class="visuallyhidden">Secondary Navigation</h2>
+            <ul>
+                <div class="region region-sidebar-first">
+    <div id="block-menu-menu-library" class="block block-menu clearfix">
+
+    <h2 class="title">Library</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first last expanded"><a href="/readingroom/" title="">Freedom of Information Act Electronic Reading Room</a><ul class="menu"><li class="first collapsed"><a href="/readingroom/what-electronic-reading-room">Requestor Portal</a></li>
+<li class="last collapsed"><a href="/readingroom/historical-collections">Historical Collections</a></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+            </ul>
+          </nav>
+        </div>
+        <div id="content">
+                    <div class="portal-breadcrumbs">
+<!--            <ul class="breadcrumbs" dir="ltr">
+              <li><a href="https://www.cia.gov/">CIA Home</a></li>
+              <li><a href="https://www.cia.gov/library">Library</a></li>
+              <li><a href="/readingroom/">Electronic Reading Room</a></li>  -->
+              <!-- -comment out breadcrumb Beacause titles are to long on documents- -->
+<!--                                                   
+            </ul>                                                                     -->
+              <div class="region region-search-bar">
+    <div id="block-block-2" class="block block-block clearfix">
+
+    
+  <div class="content">
+    <p><a href="/readingroom/search/node">Browse the Collections</a> | <a href="/readingroom/advanced-search-view">Advanced Search</a> | <a href="/readingroom/search-help">Search Help </a></p>
+  </div>
+</div>
+<div id="block-text-resize-0" class="block block-text-resize clearfix">
+
+    
+  <div class="content">
+    <a href="javascript:;" class="changer" id="text_resize_decrease"><sup>-</sup>A</a> <a href="javascript:;" class="changer" id="text_resize_reset">A</a> <a href="javascript:;" class="changer" id="text_resize_increase"><sup>+</sup>A</a><div id="text_resize_clear"></div>  </div>
+</div>
+  </div>
+          </div>                                                                     
+          <article class="description-box">
+<!--            <a id="main-content" tabindex="-1">&nbsp;</a>                        -->
+            <div class="text-holder-full">
+              <div class="documentContent" id="region-content">
+<!--                <a name="documentContent"></a>                                    -->
+                <h1 class="documentFirstHeading">Advanced Search</h1>
+                                                                  <div id="sidebar-second" class="sidebar">
+                      <div class="region region-sidebar-second">
+    <div id="block-current-search-standard" class="block block-current-search clearfix">
+
+    <h2 class="title">FOIA</h2>
+  
+  <div class="content">
+    <div class="current-search-item current-search-item-active current-search-item-active-items"><div class="item-list"><ul class=""><li class="first last">gang of four</li>
+</ul></div></div><div class="current-search-item current-search-item-text current-search-item-results">Search found 3046 items</div>  </div>
+</div>
+<div id="block-facetapi-mvwwa7wt7ihcocvp1wvjky83w7wph8uy" class="block block-facetapi clearfix">
+
+    <h2 class="title">Filter by collection:</h2>
+  
+  <div class="content">
+    <div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-im-field-collection" id="facetapi-facet-apachesolrsolr-block-im-field-collection"><li class="leaf first"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A2063099" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--94">Argentina Declassification Project - The "Dirty War" (1976-83) (8)<span class="element-invisible"> Apply Argentina Declassification Project - The &quot;Dirty War&quot; (1976-83) filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A44" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--95">Baptism By Fire: CIA Analysis of the Korean War Overview   (4)<span class="element-invisible"> Apply Baptism By Fire: CIA Analysis of the Korean War Overview   filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A4186" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--96">Bay of Pigs Release (1)<span class="element-invisible"> Apply Bay of Pigs Release filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1817859" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--97">Bosnia, Intelligence, and the Clinton Presidency (3)<span class="element-invisible"> Apply Bosnia, Intelligence, and the Clinton Presidency filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A2062205" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--98">CIA Analysis of the Soviet Navy (1)<span class="element-invisible"> Apply CIA Analysis of the Soviet Navy filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1700321" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--99">CIA Analysis of the Warsaw Pact Forces (1)<span class="element-invisible"> Apply CIA Analysis of the Warsaw Pact Forces filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834880" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--100">Consolidated Translations (176)<span class="element-invisible"> Apply Consolidated Translations filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A2062990" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--101">Current/Central Intelligence Bulletin Collection (17)<span class="element-invisible"> Apply Current/Central Intelligence Bulletin Collection filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A2062587" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--102">Daily Summary Collection (2)<span class="element-invisible"> Apply Daily Summary Collection filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1822445" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--103">Declassified Articles from Studies in Intelligence: The IC’s Journal for the Intelligence Professional (2)<span class="element-invisible"> Apply Declassified Articles from Studies in Intelligence: The IC’s Journal for the Intelligence Professional filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A89801" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--104">FOIA Collection (84)<span class="element-invisible"> Apply FOIA Collection filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1820853" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--105">From Typist to Trailblazer: The Evolving View of Women in the CIA's Workforce (1)<span class="element-invisible"> Apply From Typist to Trailblazer: The Evolving View of Women in the CIA&#039;s Workforce filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834881" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--106">General CIA Records (2086)<span class="element-invisible"> Apply General CIA Records filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1700319" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--107">Intelligence, Policy, and Politics: The DCI, the White House, and Congress (1)<span class="element-invisible"> Apply Intelligence, Policy, and Politics: The DCI, the White House, and Congress filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1829750" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--108">John McCone as Director of Central Intelligence, 1961-1965 (1)<span class="element-invisible"> Apply John McCone as Director of Central Intelligence, 1961-1965 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834883" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--109">JPRS (282)<span class="element-invisible"> Apply JPRS filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834884" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--110">Library of Congress (8)<span class="element-invisible"> Apply Library of Congress filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1705143" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--111">Nazi War Crimes Disclosure Act (103)<span class="element-invisible"> Apply Nazi War Crimes Disclosure Act filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834885" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--112">NGA Records (Formerly NIMA) (66)<span class="element-invisible"> Apply NGA Records (Formerly NIMA) filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834886" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--113">NIS (21)<span class="element-invisible"> Apply NIS filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834887" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--114">OSS Collection (5)<span class="element-invisible"> Apply OSS Collection filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A47" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--115">Preparing for Martial Law: Through the Eyes of Colonel Ryszard Kuklinski (1)<span class="element-invisible"> Apply Preparing for Martial Law: Through the Eyes of Colonel Ryszard Kuklinski filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1827265" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--116">President's Daily Brief 1961-1969 (4)<span class="element-invisible"> Apply President&#039;s Daily Brief 1961-1969 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1829819" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--117">President's Daily Brief 1969-1977 (5)<span class="element-invisible"> Apply President&#039;s Daily Brief 1969-1977 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1821105" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--118">President Carter and the Role of Intelligence in the Camp David Accords (2)<span class="element-invisible"> Apply President Carter and the Role of Intelligence in the Camp David Accords filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A17" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--119">Reagan Collection (1)<span class="element-invisible"> Apply Reagan Collection filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A2078399" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--120">Records Related to the Assassination of Senator Robert F. Kennedy (5)<span class="element-invisible"> Apply Records Related to the Assassination of Senator Robert F. Kennedy filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A2078398" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--121">Records Related to the Assassination of Senator Robert F. Kennedy (14)<span class="element-invisible"> Apply Records Related to the Assassination of Senator Robert F. Kennedy filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834888" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--122">Scientific Abstracts (106)<span class="element-invisible"> Apply Scientific Abstracts filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A46" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--123">Soviet and Warsaw Pact Military Journals (1)<span class="element-invisible"> Apply Soviet and Warsaw Pact Military Journals filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1834890" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--124">STARGATE (15)<span class="element-invisible"> Apply STARGATE filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A1818029" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--125">Stories of Sacrifice &amp; Dedication (2)<span class="element-invisible"> Apply Stories of Sacrifice &amp;amp; Dedication filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A2062376" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--126">Tet Declassified (5)<span class="element-invisible"> Apply Tet Declassified filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A14" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--127">The CAESAR, POLO, and ESAU Papers (10)<span class="element-invisible"> Apply The CAESAR, POLO, and ESAU Papers filter </span></a></li>
+<li class="leaf last"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=im_field_collection%3A48" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--128">Vietnam Histories (4)<span class="element-invisible"> Apply Vietnam Histories filter </span></a></li>
+</ul></div>  </div>
+</div>
+<div id="block-facetapi-v1mdm7v1v0nz6begw7ey4n70p1hzre0d" class="block block-facetapi clearfix">
+
+    <h2 class="title">Filter by release date:</h2>
+  
+  <div class="content">
+    <div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-dm-field-release-date" id="facetapi-facet-apachesolrsolr-block-dm-field-release-date"><li class="leaf first"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2025-01-01T00%3A00%3A00Z%20TO%202026-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--64">2025 (19)<span class="element-invisible"> Apply 2025 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2024-01-01T00%3A00%3A00Z%20TO%202025-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--65">2024 (3)<span class="element-invisible"> Apply 2024 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2023-01-01T00%3A00%3A00Z%20TO%202024-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--66">2023 (10)<span class="element-invisible"> Apply 2023 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2022-01-01T00%3A00%3A00Z%20TO%202023-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--67">2022 (8)<span class="element-invisible"> Apply 2022 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2021-01-01T00%3A00%3A00Z%20TO%202022-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--68">2021 (3)<span class="element-invisible"> Apply 2021 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2020-01-01T00%3A00%3A00Z%20TO%202021-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--69">2020 (23)<span class="element-invisible"> Apply 2020 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2019-01-01T00%3A00%3A00Z%20TO%202020-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--70">2019 (25)<span class="element-invisible"> Apply 2019 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2018-01-01T00%3A00%3A00Z%20TO%202019-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--71">2018 (8)<span class="element-invisible"> Apply 2018 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2017-01-01T00%3A00%3A00Z%20TO%202018-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--72">2017 (435)<span class="element-invisible"> Apply 2017 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2016-01-01T00%3A00%3A00Z%20TO%202017-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--73">2016 (8)<span class="element-invisible"> Apply 2016 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2015-01-01T00%3A00%3A00Z%20TO%202016-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--74">2015 (5)<span class="element-invisible"> Apply 2015 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2014-01-01T00%3A00%3A00Z%20TO%202015-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--75">2014 (51)<span class="element-invisible"> Apply 2014 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2013-01-01T00%3A00%3A00Z%20TO%202014-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--76">2013 (140)<span class="element-invisible"> Apply 2013 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2012-01-01T00%3A00%3A00Z%20TO%202013-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--77">2012 (191)<span class="element-invisible"> Apply 2012 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2011-01-01T00%3A00%3A00Z%20TO%202012-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--78">2011 (200)<span class="element-invisible"> Apply 2011 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2010-01-01T00%3A00%3A00Z%20TO%202011-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--79">2010 (192)<span class="element-invisible"> Apply 2010 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2009-01-01T00%3A00%3A00Z%20TO%202010-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--80">2009 (78)<span class="element-invisible"> Apply 2009 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2008-01-01T00%3A00%3A00Z%20TO%202009-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--81">2008 (154)<span class="element-invisible"> Apply 2008 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2007-01-01T00%3A00%3A00Z%20TO%202008-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--82">2007 (59)<span class="element-invisible"> Apply 2007 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2006-01-01T00%3A00%3A00Z%20TO%202007-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--83">2006 (86)<span class="element-invisible"> Apply 2006 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2005-01-01T00%3A00%3A00Z%20TO%202006-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--84">2005 (224)<span class="element-invisible"> Apply 2005 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2004-01-01T00%3A00%3A00Z%20TO%202005-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--85">2004 (162)<span class="element-invisible"> Apply 2004 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2003-01-01T00%3A00%3A00Z%20TO%202004-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--86">2003 (132)<span class="element-invisible"> Apply 2003 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2002-01-01T00%3A00%3A00Z%20TO%202003-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--87">2002 (103)<span class="element-invisible"> Apply 2002 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2001-01-01T00%3A00%3A00Z%20TO%202002-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--88">2001 (207)<span class="element-invisible"> Apply 2001 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B2000-01-01T00%3A00%3A00Z%20TO%202001-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--89">2000 (153)<span class="element-invisible"> Apply 2000 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B1999-01-01T00%3A00%3A00Z%20TO%202000-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--90">1999 (103)<span class="element-invisible"> Apply 1999 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B1998-01-01T00%3A00%3A00Z%20TO%201999-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--91">1998 (120)<span class="element-invisible"> Apply 1998 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B1983-01-01T00%3A00%3A00Z%20TO%201984-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--92">1983 (1)<span class="element-invisible"> Apply 1983 filter </span></a></li>
+<li class="leaf last"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=dm_field_release_date%3A%5B1976-01-01T00%3A00%3A00Z%20TO%201977-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--93">1976 (4)<span class="element-invisible"> Apply 1976 filter </span></a></li>
+</ul></div>  </div>
+</div>
+<div id="block-facetapi-n18e4x0qrraip7nv6i0sdyicjsq77hcb" class="block block-facetapi clearfix">
+
+    <h2 class="title">Filter by post date:</h2>
+  
+  <div class="content">
+    <div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-created" id="facetapi-facet-apachesolrsolr-block-created"><li class="leaf first"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2025-01-01T00%3A00%3A00Z%20TO%202026-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link">2025 (20)<span class="element-invisible"> Apply 2025 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2024-01-01T00%3A00%3A00Z%20TO%202025-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--2">2024 (7)<span class="element-invisible"> Apply 2024 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2023-01-01T00%3A00%3A00Z%20TO%202024-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--3">2023 (40)<span class="element-invisible"> Apply 2023 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2022-01-01T00%3A00%3A00Z%20TO%202023-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--4">2022 (22)<span class="element-invisible"> Apply 2022 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2020-01-01T00%3A00%3A00Z%20TO%202021-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--5">2020 (11)<span class="element-invisible"> Apply 2020 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2019-01-01T00%3A00%3A00Z%20TO%202020-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--6">2019 (18)<span class="element-invisible"> Apply 2019 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2018-01-01T00%3A00%3A00Z%20TO%202019-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--7">2018 (3)<span class="element-invisible"> Apply 2018 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2017-01-01T00%3A00%3A00Z%20TO%202018-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--8">2017 (49)<span class="element-invisible"> Apply 2017 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2016-01-01T00%3A00%3A00Z%20TO%202017-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--9">2016 (2718)<span class="element-invisible"> Apply 2016 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2015-01-01T00%3A00%3A00Z%20TO%202016-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--10">2015 (20)<span class="element-invisible"> Apply 2015 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2014-01-01T00%3A00%3A00Z%20TO%202015-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--11">2014 (2)<span class="element-invisible"> Apply 2014 filter </span></a></li>
+<li class="leaf"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2013-01-01T00%3A00%3A00Z%20TO%202014-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--12">2013 (113)<span class="element-invisible"> Apply 2013 filter </span></a></li>
+<li class="leaf last"><a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;f%5B0%5D=ds_created%3A%5B2012-01-01T00%3A00%3A00Z%20TO%202013-01-01T00%3A00%3A00Z%5D" class="facetapi-inactive active" rel="nofollow" id="facetapi-link--13">2012 (23)<span class="element-invisible"> Apply 2012 filter </span></a></li>
+</ul></div>  </div>
+</div>
+  </div>
+                  </div>
+                                  <div class="region region-header clearfix">
+    <div id="block-system-main" class="block block-system clearfix">
+
+    
+  <div class="content">
+    <div class="view view-advanced-search-view view-id-advanced_search_view view-display-id-advanced_search_view view-dom-id-e9714320bae8e6b241aa2d21b75b55d8">
+            <div class="view-header">
+      <p><strong>Click <a href="/readingroom/docs/Electronic%20Reading%20Room%20Advanced%20Search%20Guide.pdf" target="_blank">here</a> for Advanced Search Help</strong></p>
+    </div>
+  
+      <div class="view-filters">
+      <form action="/readingroom/advanced-search-view" method="get" id="views-exposed-form-advanced-search-view-advanced-search-view" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-keyword-wrapper" class="views-exposed-widget views-widget-filter-keyword">
+                  <label for="edit-keyword">
+            Search Term(s)          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-keyword">
+ <input type="text" id="edit-keyword" name="keyword" value="gang of four" size="60" maxlength="128" class="form-text" />
+</div>
+        </div>
+                  <div class="description">
+            Search for term(s) in the full-text and metadata fields          </div>
+              </div>
+          <div id="edit-im-field-collection-wrapper" class="views-exposed-widget views-widget-filter-im_field_collection">
+                  <label for="edit-im-field-collection">
+            Collection (Use the CTRL key to select and de-select collections)          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-im-field-collection">
+ <select multiple="multiple" name="im_field_collection[]" id="edit-im-field-collection" size="5" class="form-select"><option value="1">A Life in Intelligence - The Richard Helms Collection</option><option value="2">A-12 OXCART Reconnaissance Aircraft Documentation</option><option value="3">Air America: Upholding the Airmen&#039;s Bond</option><option value="4">An Underwater Ice Station Zebra: Recovering a Secret Spy Satellite Capsule from 16,400 feet Below the Pacific Ocean</option><option value="5">Animal Partners</option><option value="6">Aquiline</option><option value="7">Argentina Declassification Project - The &quot;Dirty War&quot; (1976-83)</option><option value="8">Atomic Spies: Ethel and Julius Rosenberg</option><option value="9">Baptism By Fire: CIA Analysis of the Korean War Overview</option><option value="10">Bay of Pigs Release</option><option value="11">Berlin Tunnel</option><option value="12">Bosnia, Intelligence, and the Clinton Presidency</option><option value="13">CIA Analysis of the Soviet Navy</option><option value="14">CIA Analysis of the Warsaw Pact Forces</option><option value="15">CIA Declassifies Oldest Documents in U.S. Government Collection</option><option value="16">CIA&#039;s Clandestine Services: Histories of Civil Air Transport</option><option value="17">Consolidated Translations</option><option value="18">Creating Global Intelligence</option><option value="19">CREST: 25-Year Program Archive</option><option value="20">Current/Central Intelligence Bulletin</option><option value="21">Daily Summary</option><option value="22">Declassified Articles from Studies in Intelligence: The IC’s Journal for the Intelligence Professional</option><option value="23">DECLASSIFIED DOCUMENTS RELATED TO 9/11 ATTACKS</option><option value="24">Doctor Zhivago</option><option value="25">Documents Related to the Former Detention and Interrogation Program</option><option value="26">Fall of the Libyan Monarchy</option><option value="27">FOIA Collection</option><option value="28">Francis Gary Powers: U-2 Spy Pilot Shot Down by the Soviets</option><option value="29">From Typist to Trailblazer: The Evolving View of Women in the CIA&#039;s Workforce</option><option value="30">General CIA Records</option><option value="31">Ground Photo Caption Cards</option><option value="32">Guatemala</option><option value="33">Human Rights in Latin America</option><option value="34">Intelligence, Policy, and Politics: The DCI, the White House, and Congress</option><option value="35">Intelligence Warning of the 1957 Launch of Sputnik</option><option value="36">John McCone as Director of Central Intelligence, 1961-1965</option><option value="37">JPRS</option><option value="38">Library of Congress</option><option value="39">Lt. Col. Oleg Penkovsky: Western Spy in Soviet GRU</option><option value="40">Lunik on Loan: A Space Age Spy Story</option><option value="41">MHCHAOS</option><option value="42">National Intelligence Council (NIC) Collection</option><option value="43">Nazi War Crimes Disclosure Act</option><option value="44">NGA Records (Formerly NIMA)</option><option value="45">NIS</option><option value="46">Nixon Collection</option><option value="47">OSS Collection</option><option value="48">POW MIA</option><option value="49">Preparing for Martial Law: Through the Eyes of Colonel Ryszard Kuklinski</option><option value="50">President George H. W. Bush&#039;s Farewell Visit to CIA</option><option value="51">President Carter and the Role of Intelligence in the Camp David Accords</option><option value="52">President Nixon and the Role of Intelligence in the 1973 Arab-Israeli War</option><option value="53">President&#039;s Daily Brief 1961-1969</option><option value="54">President&#039;s Daily Brief 1969-1977</option><option value="55">Reagan Collection</option><option value="56">Records Related to the Assassination of Senator Robert F. Kennedy</option><option value="57">Records Related to the Assassination of Senator Robert F. Kennedy</option><option value="58">Scientific Abstracts</option><option value="59">Secret Writing</option><option value="60">Soviet and Warsaw Pact Military Journals</option><option value="61">Soviet and Warsaw Pact Military Journals (Latest)</option><option value="62">STARGATE</option><option value="63">Stories of Sacrifice &amp; Dedication</option><option value="64">Strategic Warning and the Role of Intelligence: Lessons Learned From The 1968 Soviet Invasion of Czechoslovakia</option><option value="65">Tet Declassified</option><option value="66">The Berlin Wall Collection: A City Torn Apart: Building of the Berlin Wall</option><option value="67">The CAESAR, POLO, and ESAU Papers</option><option value="68">The China Collection</option><option value="69">The Collapse of Communism in Eastern Europe: A 30-Year Legacy</option><option value="70">The Family Jewels</option><option value="71">The Original Wizards of Langley</option><option value="72">The Princeton Collection</option><option value="73">The Vietnam Collection</option><option value="74">UFOs: Fact or Fiction?</option><option value="75">Vietnam Histories</option><option value="76">Wartime Statutes - Instruments of Soviet Control</option><option value="77">What was the Missile Gap?</option></select>
+</div>
+        </div>
+                  <div class="description">
+            Select a collection or use the CTRL key to select and de-select collections          </div>
+              </div>
+          <div id="edit-label-wrapper" class="views-exposed-widget views-widget-filter-label">
+                  <label for="edit-label">
+            Document Title          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-label">
+ <input type="text" id="edit-label" name="label" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+                  <div class="description">
+            Search for term(s) in the Title field          </div>
+              </div>
+          <div id="edit-sm-field-document-number-wrapper" class="views-exposed-widget views-widget-filter-sm_field_document_number">
+                  <label for="edit-sm-field-document-number">
+            Document Number/ESDN          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-sm-field-document-number">
+ <input type="text" id="edit-sm-field-document-number" name="sm_field_document_number" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+                  <div class="description">
+            Unique Document Identifier          </div>
+              </div>
+          <div id="edit-sm-field-original-classification-wrapper" class="views-exposed-widget views-widget-filter-sm_field_original_classification">
+                  <label for="edit-sm-field-original-classification">
+            Original Classification          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-sm-field-original-classification">
+ <input type="text" id="edit-sm-field-original-classification" name="sm_field_original_classification" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+                  <div class="description">
+            Classification prior to review and release. Search by first letter: T, S, C, U, R, F, K          </div>
+              </div>
+          <div id="edit-ds-field-pub-date-wrapper" class="views-exposed-widget views-widget-filter-ds_field_pub_date">
+                  <label for="edit-ds-field-pub-date">
+            Publication Date (YYYY-MM-DD)          </label>
+                          <div class="views-operator">
+            <div class="form-item form-type-select form-item-ds-field-pub-date-op">
+  <select id="edit-ds-field-pub-date-op" name="ds_field_pub_date_op" class="form-select"><option value="&lt;">Is less than</option><option value="&lt;=">Is less than or equal to</option><option value="=" selected="selected">Is equal to</option><option value="!=">Is not equal to</option><option value="&gt;=">Is greater than or equal to</option><option value="&gt;">Is greater than</option><option value="between">Is between</option><option value="not between">Is not between</option><option value="regular_expression">Regular expression</option><option value="not_regular_expression">Not regular expression</option></select>
+</div>
+          </div>
+                <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-ds-field-pub-date-value">
+  <input type="text" id="edit-ds-field-pub-date-value" name="ds_field_pub_date[value]" value="" size="30" maxlength="128" class="form-text" />
+</div>
+<div class="form-item form-type-textfield form-item-ds-field-pub-date-min">
+  <input class="views_input_date form-text" type="text" id="edit-ds-field-pub-date-min" name="ds_field_pub_date[min]" value="" size="30" maxlength="128" />
+</div>
+<div class="form-item form-type-textfield form-item-ds-field-pub-date-max">
+  <label for="edit-ds-field-pub-date-max">And </label>
+ <input class="views_input_date form-text" type="text" id="edit-ds-field-pub-date-max" name="ds_field_pub_date[max]" value="" size="30" maxlength="128" />
+</div>
+        </div>
+                  <div class="description">
+            Date of document creation          </div>
+              </div>
+          <div id="edit-sm-field-content-type-wrapper" class="views-exposed-widget views-widget-filter-sm_field_content_type">
+                  <label for="edit-sm-field-content-type">
+            Content Type          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-sm-field-content-type">
+ <input type="text" id="edit-sm-field-content-type" name="sm_field_content_type" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+                  <div class="description">
+            Type of document (e.g. Cable, Letter, Memo)          </div>
+              </div>
+          <div id="edit-sm-field-case-number-wrapper" class="views-exposed-widget views-widget-filter-sm_field_case_number">
+                  <label for="edit-sm-field-case-number">
+            Case Number          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-sm-field-case-number">
+ <input type="text" id="edit-sm-field-case-number" name="sm_field_case_number" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+                  <div class="description">
+            Unique identifier for FOIA release documents          </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-advanced-search-view" value="Search" class="form-submit" />    </div>
+          <div class="views-exposed-widget views-reset-button">
+        <input type="submit" id="edit-reset" name="op" value="Reset" class="form-submit" />      </div>
+      </div>
+</div>
+</div></form>    </div>
+  
+  
+      <div class="view-content">
+      <table  class="views-table cols-2">
+         <thead>
+      <tr>
+                  <th  class="views-field views-field-label" scope="col">
+            <a href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=79&amp;&amp;order=label&amp;sort=asc" title="sort by Title" class="active">Title</a>          </th>
+                  <th  class="views-field views-field-ds-field-pub-date" scope="col">
+            Publication Date          </th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr  class="odd views-field-tooltip-row views-row-first">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-0">
+            <a href="/readingroom/document/cia-rdp84b00049r000701880012-0">CABLE TO SECSTATE WASHDC PRIORITY FROM AMEMBASSY WARSAW</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            October 28, 1982          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-1">
+            <a href="/readingroom/document/cia-rdp80b01676r003800180035-6">LETTER TO MR. JOHN RICHARDSON, JR.</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            June 12, 1958          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-2">
+            <a href="/readingroom/document/cia-rdp69b00369r000200290067-0">TOO HERIOC TO DIE</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            October 17, 1967          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-3">
+            <a href="/readingroom/document/cia-rdp75-00001r000300280044-7">INTERNAL WAR THE NEW COMMUNIST TACTIC</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            September 15, 1961          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-4">
+            <a href="/readingroom/document/cia-rdp78b04558a001600010011-2">CABLE TO DIRNSA FROM NPIC</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            September 29, 1966          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-5">
+            <a href="/readingroom/document/cia-rdp79-00927a002900010001-1">CURRENT INTELLIGENCE WEEKLY SUMMARY</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            September 1, 1960          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-6">
+            <a href="/readingroom/document/cia-rdp80-00810a006800060010-3">AG WISMUT: OBJECT 6 AT AUERBACH</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            June 17, 1955          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-7">
+            <a href="/readingroom/document/cia-rdp75-00149r000200900053-6">THE ROOTS OF THE ARKANSAS QUESTIONER</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            May 13, 1966          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-8">
+            <a href="/readingroom/document/cia-rdp71b00364r000100170049-6">BOTH HOUSES DEMAND PROBE OF PUEBLO</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            January 28, 1969          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-9">
+            <a href="/readingroom/document/cia-rdp79t00912a001800010013-6">INTERNATIONAL NARCOTICS STAFF NOTES</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            June 8, 1977          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-10">
+            <a href="/readingroom/document/cia-rdp80-00809a000600210265-5">ECONOMIC- MANGANESE</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            March 8, 1949          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-11">
+            <a href="/readingroom/document/cia-rdp79-01209a000900060001-4">WEEKLY SITUATION REPORT ON INTERNATIONAL TERRORISM</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            January 4, 1978          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-12">
+            <a href="/readingroom/document/cia-rdp79r01012a002500050001-0">PROBABLE DEVELOPMENTS IN INDONESIA</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            June 11, 1953          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-13">
+            <a href="/readingroom/document/cia-rdp84-00893r000100160001-3">TERRORISM REVIEW</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            May 12, 1983          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-14">
+            <a href="/readingroom/document/cia-rdp86t01017r000707020001-4">SOUTH AFRICA: TIME RUNNING OUT, REVISITED</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            January 10, 1986          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-15">
+            <a href="/readingroom/document/cia-rdp90-00965r000504520002-7">SECRET WAS IN CENTRAL AMERICA</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            April 14, 1986          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-16">
+            <a href="/readingroom/document/cia-rdp90-00806r000100210066-5">COUNCIL ON FOREIGN RELATIONS, INC. ANNUAL REPORT 1984-1985</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            June 30, 1985          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-17">
+            <a href="/readingroom/document/cia-rdp67-00318r000100210001-4">THE CENTRAL INTELLIGENCE AGENCY</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            January 1, 1963          </td>
+              </tr>
+          <tr  class="odd views-field-tooltip-row">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-18">
+            <a href="/readingroom/document/cia-rdp81-01030r000100410001-4">EVALUATION OF GERMAN AND SOVIET MISSILE RESEARCH PROGRAM AT KB NO. 3 IN KRASNOARMEYSK</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            April 26, 1954          </td>
+              </tr>
+          <tr  class="even views-field-tooltip-row views-row-last">
+                  <td  class="views-field views-field-label views-field-tooltip views-field-tooltip-field-label views-field-tooltip-row-19">
+            <a href="/readingroom/document/cia-rdp85t00875r000300040019-1">TRENDS IN COMMUNIST PROPAGANDA</a>          </td>
+                  <td  class="views-field views-field-ds-field-pub-date">
+            May 5, 1971          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a title="Go to first page" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=">« first</a></li>
+<li class="pager-previous"><a title="Go to previous page" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=78">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a title="Go to page 76" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=75">76</a></li>
+<li class="pager-item"><a title="Go to page 77" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=76">77</a></li>
+<li class="pager-item"><a title="Go to page 78" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=77">78</a></li>
+<li class="pager-item"><a title="Go to page 79" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=78">79</a></li>
+<li class="pager-current">80</li>
+<li class="pager-item"><a title="Go to page 81" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=80">81</a></li>
+<li class="pager-item"><a title="Go to page 82" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=81">82</a></li>
+<li class="pager-item"><a title="Go to page 83" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=82">83</a></li>
+<li class="pager-item"><a title="Go to page 84" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=83">84</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a title="Go to next page" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=80">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="/readingroom/advanced-search-view?keyword=gang%20of%20four&amp;label=&amp;sm_field_document_number=&amp;sm_field_original_classification=&amp;ds_field_pub_date_op=%3D&amp;ds_field_pub_date%5Bvalue%5D=&amp;ds_field_pub_date%5Bmin%5D=&amp;ds_field_pub_date%5Bmax%5D=&amp;sm_field_content_type=&amp;sm_field_case_number=&amp;page=152">last »</a></li>
+</ul></div>  
+  
+  
+      <div class="view-footer">
+      Displaying 1581 - 1600 of 3046    </div>
+  
+  
+</div>  </div>
+</div>
+  </div>
+                                            </div>
+            </div>
+          </article>
+        </div>
+      </div><!--close main holder-->
+    </section>
+    <footer id="footer">
+
+
+
+
+
+
+<!--       <div class="row body-filler-space">
+            <div class="col-lg-12 text-center align-middle">
+                &nbsp;
+            </div>
+        </div>
+-->
+        <div class="row body-line-divider">
+            <div class="col-lg-12"></div>
+        </div>
+
+        <div class="row navbar-footer">
+            <div class="col-lg-12 navbar-footer-main-wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2 navbar-footer-col">
+                                <div class="h-3 navbar-footer-title">Agency</div>
+                                <div class="h-6-reverse" onclick="GoTo('about')"><u>About CIA</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('about')"><u>Organization</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('legacy')"><u>Director of the CIA</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('about')"><u>CIA Museum</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('stories')"><u>News & Stories</u></div>
+                            </div>
+                            <div class="col-2 navbar-footer-col">
+                                <div class="h-3">Careers</div>
+                                <div class="h-6-reverse" onclick="GoTo('careers/working-at-cia')"><u>Working at CIA</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('careers/how-we-hire')"><u>How We Hire</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('careers/student-programs')"><u>Student Programs</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('careers/jobs')"><u>Browse CIA Jobs</u></div>
+                            </div>
+                            <div class="col-2 navbar-footer-col">
+                                <div class="h-3">Resources</div>
+                                <div class="h-6-reverse-extended" onclick="GoTo('readingroom')"><u>Freedom of Information Act (FOIA)</u></div>
+                                <div class="h-6-reverse-extended" onclick="GoTo('resources/csi')"><u>Center for the Study of Intelligence (CSI)</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('the-world-factbook')"><u>The World Factbook</u></div>
+                                <div class="h-6-reverse" onclick="GoTo('spy-kids')"><u>Spy Kids</u></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row navbar-footer-sublink">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-md-3 my-auto navbar-footer-sublink-col-left-side">
+                                <button class="navbar-report-information button-effect"  onclick="GoTo('report-information')">REPORT INFORMATION</button>
+                            </div>
+                            <div class="col-12 col-md-6 my-auto navbar-footer-sublink-col-left-side">
+                                <button class="navbar-contact-us button-effect"  onclick="GoTo('contact-cia')">CONTACT CIA</button> </div>
+                            <div class="col-12 col-lg-3 my-auto navbar-footer-sublink-col-right-side">
+                                <div class="navbar-footer-social">
+                                    <div class="navbar-footer-social-label">Connect with CIA</div>
+                                    <div class="navbar-footer-social-platforms">
+                                        <img class="social-platform ig" src="/readingroom/sites/all/themes/foia_theme/images/bt/IG.svg" onclick="GoToSocial('instagram')" />
+                                        <img class="social-platform fb" src="/readingroom/sites/all/themes/foia_theme/images/bt/Fb.svg" onclick="GoToSocial('facebook')" />
+                                        <img class="social-platform tw" src="/readingroom/sites/all/themes/foia_theme/images/bt/Tw.svg" onclick="GoToSocial('twitter')" />
+                                        <img class="social-platform li" src="/readingroom/sites/all/themes/foia_theme/images/bt/Li.svg" onclick="GoToSocial('linkedin')" />
+                                        <img class="social-platform yt" src="/readingroom/sites/all/themes/foia_theme/images/bt/YT.svg" onclick="GoToSocial('youtube')" />
+                                        <img class="social-platform fl" src="/readingroom/sites/all/themes/foia_theme/images/bt/Fl.svg" onclick="GoToSocial('flickr')" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="bg-image"></div-->
+            </div>
+        </div>
+        <div class="row body-line-divider">
+            <div class="col-lg-12"></div>
+        </div>
+        <div class="row navbar-footer-utility">
+            <div class="col-lg-12 navbar-footer-main-wrapper align-middle mid no-gutter">
+                <div class="navbar-footer-utility-links my-auto">
+                    <span class="utility-item" onclick="GoTo('search')"><u>Search CIA.gov</u></span>
+                    <span class="utility-item" onclick="GoTo('site-policies')"><u>Site Policies</u></span>
+                    <span class="utility-item" onclick="GoTo('privacy')"><u>Privacy</u></span>
+                    <span class="utility-item" onclick="GoTo('about/organization/equal-employment-opportunity/no-fear-act')"><u>No FEAR Act</u></span>
+                    <span class="utility-item" onclick="GoTo('about/organization/inspector-general')"><u>Inspector General</u></span>
+                    <span class="utility-item" onclick="location.href = 'https://www.usa.gov'"><u>USA.gov</u></span>
+                    <span class="utility-item" onclick="GoTo('sitemap')"><u>Site Map</u> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <div class="skip"><a href="#wrapper">back to top</a></div>
+      <div class="skip">
+        <a accesskey="b" href="#wrapper">back to top</a>
+      </div>
+    </div>
+  </div><!-- close main block-->
+</div><!-- close wrapper-->
+  </body>
+</html>
